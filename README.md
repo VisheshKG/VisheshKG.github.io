@@ -1,0 +1,1 @@
+Just a small static website about myself, hope you enjoy!

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Optional: tweak the default theme BEFORE the CDN script -->
+    <!-- Import tailwind via CDN script -->
+    <script>
+      tailwind = {
+        theme: {
+          extend: {
+            colors: { brand: "#f59e0b" }   // adds bg-brand, text-brand, etc.
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Also link style sheet and js script -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script defer src="/assets/js/main.js"></script>
+
+    <title>Vishesh Goyal</title>
+  </head>
+  <body class="bg-zinc-50 text-zinc-900">
+    <header class="max-w-4xl mx-auto p-6">
+      <h1 class="text-3xl font-bold">Hi, I'm Vishesh</h1>
+      <p class="mt-2 text-zinc-600">Here's some more about me</p>
+      <a class="inline-block mt-4 px-4 py-2 rounded-xl bg-brand text-white">Say hi</a>
+    </header>
+  </body>
+</html>
