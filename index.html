@@ -23,11 +23,28 @@
 
     <title>Vishesh Goyal</title>
   </head>
-  <body class="bg-zinc-50 text-zinc-900">
-    <header class="max-w-4xl mx-auto p-6">
-      <h1 class="text-3xl font-bold">Hi, I'm Vishesh</h1>
-      <p class="mt-2 text-zinc-600">Here's some more about me</p>
-      <a class="inline-block mt-4 px-4 py-2 rounded-xl bg-brand text-white">Say hi</a>
+  <body class="bg-zinc-50 text-zinc-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b shadow-sm">
+      <nav class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-brand">Vishesh Goyal</h1>
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#" onclick="loadPage('home')" class="hover:text-brand">Home</a></li>
+          <li><a href="#" onclick="loadPage('about')" class="hover:text-brand">About</a></li>
+          <li><a href="#" onclick="loadPage('experience')" class="hover:text-brand">Projects</a></li>
+          <li><a href="#" onclick="loadPage('contact')" class="hover:text-brand">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- Main Content -->
+    <main id="content" class="flex-1 max-w-4xl mx-auto p-6">
+        <!-- Script automatically loads home page -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-100 text-center p-4 text-sm text-zinc-500 border-t">
+      © <span id="year"></span> Vishesh Goyal. All Rights Reserved.
+    </footer>
   </body>
 </html>
